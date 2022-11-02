@@ -1,8 +1,42 @@
- <article class="card">
- <div class="card-header flex-row justify-space-between" id="singleRecipe">
-      <img src="{{recipe.image}}"  class="card-img-top" alt="...">
-      <h2>{{recipe.title}}</h2>
-       <span><h3>{{recipe.ingredients}}</h3></span>
-       <span><p class="card-text">{{recipe.ingredients}}</p></span>
+ </div>
+
+<body>
+ <div class="row g-0 text-center" id="singleRecipe">
+
+  
+<div class="col-sm-8 col-md-8">
+
+
+<div class="card mb-3" style="max-width: 100%; height: 100%">
+  <div class="row g-0">
+    <div class="col-md-12">
+      <img src="{{recipe.image}}" class="img-fluid rounded" alt="...">
     </div>
-  </article>
+    <div class="col-md-12">
+      <div class="card-body">
+        <h5 class="card-title">{{recipe.title}}</h5>
+        <p class="card-text">{{recipe.instructions}}</p>
+        <p class="card-text">{{recipe.ingredients}}</p>
+        <p class="card-text"><small class="text-muted">Posted by {{recipe.user.email}} on {{format_date recipe.createdAt}}</small></p>
+      </div>
+   
+
+
+    </div>
+  </div>
+</div>
+
+</div>
+
+</div>   
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
