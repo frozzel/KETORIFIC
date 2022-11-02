@@ -1,4 +1,4 @@
-const postId = document.querySelector('input[name="post-id"]').value;
+const postId = document.querySelector('input[name="recipe_id"]').value;
 
 const editForm = async function(event) {
   event.preventDefault();

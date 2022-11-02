@@ -15,7 +15,7 @@ Recipe.belongsTo(User, {
 });
 
 Posts.hasMany(Comments, {
-    foreignKey: 'post_Id',
+    foreignKey: 'posts_id',
     onDelete: 'CASCADE'
   });
 
