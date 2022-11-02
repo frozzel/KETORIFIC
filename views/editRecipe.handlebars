@@ -1,0 +1,34 @@
+<div class="row g-0 text-center">
+  <div class="col-sm-4 col-md-4"></div>
+  
+<div class="col-sm-4 col-md-4">
+
+
+<div class="edit card">
+  <div class="card-header">
+    <h2>Edit Recipe!</h2>
+  </div>
+  <form id="editRecipe" class="card-body">
+    <input type="hidden" name="post-id" value="{{meetups.id}}" />
+
+     <label class="form-label" for="title">Recipe Title</label>
+    <input type="text" name="title" value="{{recipe.title}}" class="form-input" />
+<br>
+    <label class="form-label" for="image">Image Url</label>
+    <input type="text" name="image" value="{{recipe.image}}" class="form-input" />
+<br>
+    <label class="form-label" for="description">Instructions</label>
+    <textarea name="instructions" class="form-input">{{recipe.instructions}}</textarea>
+    <br>
+    <label class="form-label" for="description">Ingredients</label>
+    <textarea name="ingredients" class="form-input">{{recipe.ingredients}}</textarea>
+<br>
+    <button type="submit" class="btn">Update</button>
+
+    <button type="button" id="deletebtn" class="btn">Delete</button>
+  </form>
+</div>
+</div>
+<div class="col-4 col-md-4"></div>
+</div>
+<script src="/js/editrecipe.js"></script>

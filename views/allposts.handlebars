@@ -1,0 +1,54 @@
+</div>
+<div class="headimg col-sm-12 col-md-12">
+      <div class="OpenStatement">Welecome To The Keto Life Blog</div>
+     </div>
+<br>
+<body>
+    
+
+<main>
+    
+ <div class="row">
+
+  <div class="row col-12">
+  
+     
+        {{#each posts}}
+         <div class="card " style="width: 18rem;">
+            <img src="{{image}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{title}}</h5>
+                <p class="card-text">{{description}}</p>
+                <a href="/Posts/{{id}}" class="btn btn-primary">View Post</a>
+              </div>
+          </div>
+        
+        {{/each}}
+
+    </div>
+
+
+<div class="row rowHi MeetupCross">
+ <div class="OpenStatement">Share your Recipes with Friends!</div>
+ </div>
+<div class="row">
+   <div class="row col-12">
+  
+     
+        {{#each recipe}}
+         <div class="card " style="width: 18rem;">
+            <img src="{{image}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{title}}</h5>
+                <p class="card-text">{{instructions}}</p>
+               
+                <a href="/Recipe/{{id}}" class="btn btn-primary">View Post</a>
+              </div>
+          </div>
+        
+        {{/each}}
+
+    </div>
+
+</div>
+ </main> 
