@@ -33,7 +33,7 @@ const withAuth = require('../utils/auth');
 
 // // opens handlebars views to a user form to allow a new Meetup, Post, Profile
 router.get('/newRecipe', withAuth,(req, res) => {
-    res.render('newMeetup', {
+    res.render('newRecipe', {
         layout: 'dashboard',
     });
  });

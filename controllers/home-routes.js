@@ -14,9 +14,9 @@ const router= require('express').Router();
       });
   
       if (pData) {
-        const Recipe = pData.get({ plain: true });
+        const recipe = pData.get({ plain: true });
   
-        res.render('singleRecipe', { Recipe });
+        res.render('singleRecipe', { recipe });
       } else {
         res.status(404).end();
       }
@@ -36,15 +36,16 @@ const router= require('express').Router();
         
       });
   
-      const Posts = pData.map((Posts) => Posts.get({ plain: true }));
-      const Recipe = mData.map((Recipe) => Recipe.get({ plain: true }));
+      const posts = pData.map((Posts) => Posts.get({ plain: true }));
+      const recipe = mData.map((Recipe) => Recipe.get({ plain: true }));
       res.render('allposts', { 
-        Posts,
-        Recipe,
+        posts,
+        recipe,
 
        });
     } catch (err) {
       res.status(500).json(err);
+      console.log(err)
     }
   });
 
@@ -60,8 +61,8 @@ const router= require('express').Router();
       });
 
       if (pData) {
-        const Posts = pData.get({ plain: true });
-        res.render('indivpost', { Posts });
+        const posts = pData.get({ plain: true });
+        res.render('singlePosts', { posts });
       } else {
         res.status(404).end();
       }

@@ -1,0 +1,48 @@
+ 
+
+
+<div class="recipes row align-center">Your Shared Posts!</div>
+
+<div class="row col-12">
+  
+     
+        {{#each posts}}
+         <div class="card " style="width: 18rem;">
+            <img src="{{image}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{title}}</h5>
+                <p class="card-text">{{description}}</p>
+                <a href="/dashboard/edit/{{id}}" class="btn btn-primary">Edit Post</a>
+              </div>
+          </div>
+        
+        {{/each}}
+
+    </div>
+
+    <div class="recipes row align-center">Your Shared Recipes!</div>
+
+<div class="row col-12">
+  
+     
+        {{#each recipe}}
+         <div class="card" style="width: 18rem;;">
+            <img src="{{image}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{title}}</h5>
+                <p class="card-text">{{instructions}}</p>
+                <a href="/dashboard/editRecipe/{{id}}" class="btn btn-primary">Edit Post</a>
+              </div>
+          </div>
+        
+        {{/each}}
+
+    </div>
+      
+
+
+
+
+  
+
+

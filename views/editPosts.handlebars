@@ -1,0 +1,32 @@
+
+<div class="row g-0 text-center">
+  <div class="col-sm-4 col-md-4"></div>
+  
+<div class="col-sm-4 col-md-4">
+
+
+<div class="edit card">
+  <div class="card-header">
+    <h2>Edit Post</h2>
+  </div>
+  <form id="editpost" class="card-body">
+    <input type="hidden" name="post-id" value="{{post.id}}" />
+
+     <label class="form-label" for="title">Title</label>
+    <input type="text" name="title" value="{{posts.title}}" class="form-input" />
+<br>
+     <label class="form-label" for="image">Image Url</label>
+    <input type="text" name="image" value="{{posts.image}}" class="form-input" />
+<br>
+    <label class="form-label" for="description">Description</label>
+    <textarea name="description" class="form-input">{{posts.description}}</textarea>
+<br>
+    <button type="submit" class="btn">Update</button>
+
+    <button type="button" id="deletebtn" class="btn">Delete</button>
+  </form>
+</div>
+</div>
+<div class="col-4 col-md-4"></div>
+</div>
+<script src="/js/editposts.js"></script>
